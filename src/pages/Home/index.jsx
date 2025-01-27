@@ -24,10 +24,14 @@ function Home(){
         setEndereco(null);
       }
     };
+
     return(
         <div className='search_container'>
+
       <h1 className='titulo'>Buscador de Endereços por CEP</h1>
+
       <form onSubmit={handleSubmit}>
+
         <label htmlFor="cep">CEP:</label>
         <input
           type="text"
@@ -35,24 +39,31 @@ function Home(){
           value={cep}
           onChange={handleCepChange}
         />
+
         <button type="submit">Buscar</button>
+
       </form>
       {endereco ? (
         <div>
-          <p>Logradouro: {endereco.logradouro || 'Nada consta'}</p>
-          <p>Complemento: {endereco.complemento || 'Nada consta'}</p>
-          <p>Unidade:  {endereco.unidade || 'Nada consta'}</p>
-          <p>Localidade:  {endereco.localidade || 'Nada consta'}</p>
-          <p>UF:  {endereco.uf || 'Nada consta'}</p>
-          <p>Estado:  {endereco.estado || 'Nada consta'}</p>
-          <p>Região:  {endereco.regiao || 'Nada consta'}</p>
-          <p>IBGE:  {endereco.ibge || 'Nada consta'}</p>
-          <p>GIA:  {endereco.gia || 'Nada consta'}</p>
-          <p>DDD:  {endereco.ddd || 'Nada consta'}</p>
-          <p>SIAFI:  {endereco.siafi || 'Nada consta'}</p>
+
+          <p>Logradouro: {endereco.logradouro || 'Nada encontrado'}</p>
+          <p>Complemento: {endereco.complemento || 'Nada encontrado'}</p>
+          <p>Unidade:  {endereco.unidade || 'Nada encontrado'}</p>
+          <p>Localidade:  {endereco.localidade || 'Nada encontrado'}</p>
+          <p>UF:  {endereco.uf || 'Nada encontrado'}</p>
+          <p>Estado:  {endereco.estado || 'Nada encontrado'}</p>
+          <p>Região:  {endereco.regiao || 'Nada encontrado'}</p>
+          <p>IBGE:  {endereco.ibge || 'Nada encontrado'}</p>
+          <p>GIA:  {endereco.gia || 'Nada encontrado'}</p>
+          <p>DDD:  {endereco.ddd || 'Nada encontrado'}</p>
+          <p>SIAFI:  {endereco.siafi || 'Nada encontrado'}</p>
+          
         </div>
+
       ) : (
+
         <p>Nada encontrado.</p>
+
       )
     }
     </div>
