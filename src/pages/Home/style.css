@@ -1,0 +1,45 @@
+  *{
+    padding: 0;
+    margin: 0;
+  }
+
+  .search_container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  .titulo{
+    margin: 1rem;
+    padding: 1rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  form{
+    padding: 1rem;
+    margin: 1rem;
+  }
+
+  input {
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    margin: 5px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+
+  p{
+    align-items: flex-start;
+    padding: 2px;
+  }
